@@ -1,0 +1,39 @@
+﻿<Window x:Class="_0510_note.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_0510_note"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <!--定義格子-->
+            <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        <!--左邊選單-->
+        <Rectangle Grid.Column="0" Fill="CadetBlue"></Rectangle>
+        <StackPanel Grid.Column="0">
+            <Button x:Name="OpenButton" Background="Cornsilk" Height="35" Width="120" Margin="0 25" Padding="10 10 10 10" Click="OpenButton_Click">Open</Button>
+            <Button x:Name="SaveButton" Background="Cornsilk" Height="35" Width="120" Padding="10 10 10 10" Click="SaveButton_Click">Save</Button>
+            <StackPanel Orientation="Horizontal" Width="120" Height="40" Margin="0 20">
+                <Button x:Name="FontSmall" Width="30" Height="40" Background="CadetBlue" FontSize="12" Padding="5 13" Margin="0 0 15 0" Click="FontSmall_Click">A</Button>
+                <Button x:Name="FontNormal" Width="30" Height="40" Background="CadetBlue" FontSize="16" Padding="5 10" Margin="0 0 15 0" Click="FontNormal_Click">A</Button>
+                <Button x:Name="FontBig" Width="30" Height="40" Background="CadetBlue" FontSize="24" Padding="5 0" Click="FontBig_Click">A</Button>
+            </StackPanel>           
+            <StackPanel Orientation="Horizontal" Width="120" Margin="0 150">
+                <Border CornerRadius="20"><Button Width="30" Height="30" x:Name="Whtie" Background="White" Margin="20 0 0 0" Click="Whtie_Click"></Button></Border>
+                <Border CornerRadius="20">
+                    <Button Width="30" Height="30" x:Name="Black" Background="DarkSlateGray" Margin="20 0 0 0" Click="Black_Click"></Button></Border>
+            </StackPanel>            
+        </StackPanel>
+        
+        <!--右邊輸入區-->
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Grid.Column="1">
+            <TextBox x:Name="Textarea" Grid.Column="1" AcceptsReturn="True" TextWrapping="Wrap"></TextBox>
+        </ScrollViewer>
+
+    </Grid>
+</Window>

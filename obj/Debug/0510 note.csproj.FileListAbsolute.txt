@@ -1,0 +1,30 @@
+C:\Users\信如\Desktop\學校\程式\git\0510 note\0510 note\bin\Debug\0510 note.exe.config
+C:\Users\信如\Desktop\學校\程式\git\0510 note\0510 note\bin\Debug\0510 note.exe
+C:\Users\信如\Desktop\學校\程式\git\0510 note\0510 note\bin\Debug\0510 note.pdb
+C:\Users\信如\Desktop\學校\程式\git\0510 note\0510 note\obj\Debug\0510 note.csprojResolveAssemblyReference.cache
+C:\Users\信如\Desktop\學校\程式\git\0510 note\0510 note\obj\Debug\MainWindow.g.cs
+C:\Users\信如\Desktop\學校\程式\git\0510 note\0510 note\obj\Debug\App.g.cs
+C:\Users\信如\Desktop\學校\程式\git\0510 note\0510 note\obj\Debug\0510 note_MarkupCompile.cache
+C:\Users\信如\Desktop\學校\程式\git\0510 note\0510 note\obj\Debug\0510 note_MarkupCompile.lref
+C:\Users\信如\Desktop\學校\程式\git\0510 note\0510 note\obj\Debug\MainWindow.baml
+C:\Users\信如\Desktop\學校\程式\git\0510 note\0510 note\obj\Debug\0510 note.g.resources
+C:\Users\信如\Desktop\學校\程式\git\0510 note\0510 note\obj\Debug\_0510_note.Properties.Resources.resources
+C:\Users\信如\Desktop\學校\程式\git\0510 note\0510 note\obj\Debug\0510 note.csproj.GenerateResource.cache
+C:\Users\信如\Desktop\學校\程式\git\0510 note\0510 note\obj\Debug\0510 note.csproj.CoreCompileInputs.cache
+C:\Users\信如\Desktop\學校\程式\git\0510 note\0510 note\obj\Debug\0510 note.exe
+C:\Users\信如\Desktop\學校\程式\git\0510 note\0510 note\obj\Debug\0510 note.pdb
+C:\Users\信如\Desktop\學校\程式\git\2018-05-10 note\0510 note\bin\Debug\0510 note.exe.config
+C:\Users\信如\Desktop\學校\程式\git\2018-05-10 note\0510 note\bin\Debug\0510 note.exe
+C:\Users\信如\Desktop\學校\程式\git\2018-05-10 note\0510 note\bin\Debug\0510 note.pdb
+C:\Users\信如\Desktop\學校\程式\git\2018-05-10 note\0510 note\obj\Debug\0510 note.csprojResolveAssemblyReference.cache
+C:\Users\信如\Desktop\學校\程式\git\2018-05-10 note\0510 note\obj\Debug\MainWindow.g.cs
+C:\Users\信如\Desktop\學校\程式\git\2018-05-10 note\0510 note\obj\Debug\App.g.cs
+C:\Users\信如\Desktop\學校\程式\git\2018-05-10 note\0510 note\obj\Debug\0510 note_MarkupCompile.cache
+C:\Users\信如\Desktop\學校\程式\git\2018-05-10 note\0510 note\obj\Debug\0510 note_MarkupCompile.lref
+C:\Users\信如\Desktop\學校\程式\git\2018-05-10 note\0510 note\obj\Debug\MainWindow.baml
+C:\Users\信如\Desktop\學校\程式\git\2018-05-10 note\0510 note\obj\Debug\0510 note.g.resources
+C:\Users\信如\Desktop\學校\程式\git\2018-05-10 note\0510 note\obj\Debug\_0510_note.Properties.Resources.resources
+C:\Users\信如\Desktop\學校\程式\git\2018-05-10 note\0510 note\obj\Debug\0510 note.csproj.GenerateResource.cache
+C:\Users\信如\Desktop\學校\程式\git\2018-05-10 note\0510 note\obj\Debug\0510 note.csproj.CoreCompileInputs.cache
+C:\Users\信如\Desktop\學校\程式\git\2018-05-10 note\0510 note\obj\Debug\0510 note.exe
+C:\Users\信如\Desktop\學校\程式\git\2018-05-10 note\0510 note\obj\Debug\0510 note.pdb
