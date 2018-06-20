@@ -27,35 +27,12 @@ namespace _0510_note
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
-            // 產生儲存檔案視窗 SaveFileDialog
-            Microsoft.Win32.SaveFileDialog dig = new Microsoft.Win32.SaveFileDialog();
-
-            // 顯示視窗
-            Nullable<bool> result = dig.ShowDialog();
-
-            // 當按下儲存之後的反應
-            if (result == true)
-            {
-                // 寫入檔案
-                System.IO.File.WriteAllText(dig.FileName, Textarea.Text);
-            }            
+                
         }
 
         private void OpenButton_Click(object sender, RoutedEventArgs e)
         {
-            // 產生開啟檔案視窗 OpenFileDialog
-            Microsoft.Win32.OpenFileDialog dig = new Microsoft.Win32.OpenFileDialog();
-
-            // 顯示視窗
-            Nullable<bool> result = dig.ShowDialog();
-
-            // 當按下儲存之後的反應
-            if (result == true)
-            {
-                // 寫入檔案
-                Textarea.Text = System.IO.File.ReadAllText(dig.FileName);
-            }
-
+            
         }
 
         private void Color_Click(object sender, RoutedEventArgs e)
@@ -78,21 +55,86 @@ namespace _0510_note
             Textarea.FontSize = 24;
         }
 
-        private void Whtie_Click(object sender, RoutedEventArgs e)
+        /*private void Whtie_Click(object sender, RoutedEventArgs e)
         {
-            Textarea.Background = Brushes.White;
-            Textarea.Foreground = Brushes.Black;
+            
         }
 
         private void Black_Click(object sender, RoutedEventArgs e)
         {
-            Textarea.Background = Brushes.DarkSlateGray;
-            Textarea.Foreground = Brushes.White;
+            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             
+        }*/
+
+        private void OpenButton_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            // 產生開啟檔案視窗 OpenFileDialog
+            Microsoft.Win32.OpenFileDialog dig = new Microsoft.Win32.OpenFileDialog();
+
+            // 顯示視窗
+            Nullable<bool> result = dig.ShowDialog();
+
+            // 當按下儲存之後的反應
+            if (result == true)
+            {
+                // 寫入檔案
+                Textarea.Text = System.IO.File.ReadAllText(dig.FileName);
+            }
+        }
+
+        private void SaveButton_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            // 產生儲存檔案視窗 SaveFileDialog
+            Microsoft.Win32.SaveFileDialog dig = new Microsoft.Win32.SaveFileDialog();
+
+            // 顯示視窗
+            Nullable<bool> result = dig.ShowDialog();
+
+            // 當按下儲存之後的反應
+            if (result == true)
+            {
+                // 寫入檔案
+                System.IO.File.WriteAllText(dig.FileName, Textarea.Text);
+            }
+        }
+
+        private void Black_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Textarea.Background = Brushes.DimGray;
+            Textarea.Foreground = Brushes.White;
+            Black.Background = Brushes.White;
+        }
+
+        private void NewButton_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Textarea.Text = "";
+        }
+
+        private void SaveAsButton_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            // 產生儲存檔案視窗 SaveFileDialog
+            Microsoft.Win32.SaveFileDialog dig = new Microsoft.Win32.SaveFileDialog();
+
+            // 顯示視窗
+            Nullable<bool> result = dig.ShowDialog();
+
+            // 當按下儲存之後的反應
+            if (result == true)
+            {
+                // 寫入檔案
+                System.IO.File.WriteAllText(dig.FileName, Textarea.Text);
+            }
+        }
+
+        private void White_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Textarea.Background = Brushes.White;
+            Textarea.Foreground = Brushes.Black;
+            Black.Background = Brushes.DimGray;
         }
     }
 }

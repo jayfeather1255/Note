@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_0510_note"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="600" Width="800">
     <Grid>
         <!--定義格子-->
             <Grid.ColumnDefinitions>
@@ -14,25 +14,42 @@
         </Grid.ColumnDefinitions>
         
         <!--左邊選單-->
-        <Rectangle Grid.Column="0" Fill="CadetBlue"></Rectangle>
+        <Rectangle Grid.Column="0" Fill="Black"></Rectangle>
         <StackPanel Grid.Column="0">
-            <Button x:Name="OpenButton" Background="Cornsilk" Height="35" Width="120" Margin="0 25" Padding="10 10 10 10" Click="OpenButton_Click">Open</Button>
-            <Button x:Name="SaveButton" Background="Cornsilk" Height="35" Width="120" Padding="10 10 10 10" Click="SaveButton_Click">Save</Button>
-            <StackPanel Orientation="Horizontal" Width="120" Height="40" Margin="0 20">
-                <Button x:Name="FontSmall" Width="30" Height="40" Background="CadetBlue" FontSize="12" Padding="5 13" Margin="0 0 15 0" Click="FontSmall_Click">A</Button>
-                <Button x:Name="FontNormal" Width="30" Height="40" Background="CadetBlue" FontSize="16" Padding="5 10" Margin="0 0 15 0" Click="FontNormal_Click">A</Button>
-                <Button x:Name="FontBig" Width="30" Height="40" Background="CadetBlue" FontSize="24" Padding="5 0" Click="FontBig_Click">A</Button>
+            <Grid x:Name="NewButton" MouseDown="NewButton_MouseDown" Margin="25 30 25 0"  Height="35" Width="120">
+                <Rectangle></Rectangle>
+                <TextBlock FontSize="13" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Left">New</TextBlock>
+            </Grid>
+            <Grid x:Name="OpenButton" MouseDown="OpenButton_MouseDown" Margin="25 10 25 0" Height="35" Width="120">
+                <Rectangle ></Rectangle>
+                <TextBlock FontSize="13" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Left">Open</TextBlock>
+            </Grid>
+            <Grid x:Name="SaveButton" MouseDown="SaveButton_MouseDown" Margin="25 10 25 0" Height="35" Width="120">
+                <Rectangle></Rectangle>
+                <TextBlock FontSize="14" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Left">Save</TextBlock>
+            </Grid>
+            <Grid x:Name="SaveAsButton" MouseDown="SaveAsButton_MouseDown" Margin="25 10 25 0" Height="35" Width="120">
+                <Rectangle></Rectangle>
+                <TextBlock FontSize="14" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Left">Save As</TextBlock>
+            </Grid>
+
+            <!--FontSize-->
+            <StackPanel Orientation="Horizontal" Width="130" Height="40" Margin="0 30">
+                <Button x:Name="FontSmall" Width="20" Height="40" Foreground="White" Background="Transparent" BorderThickness="0" FontFamily="Courier New" FontSize="12" Padding="5 5 5 0" Margin="0 0 10 0" Click="FontSmall_Click">A</Button>
+                <Button x:Name="FontNormal" Width="30" Height="40" Foreground="White" Background="Transparent" BorderThickness="0" FontFamily="Courier New" FontSize="16" Padding="5 4 5 0" Margin="0 0 10 0" Click="FontNormal_Click">A</Button>
+                <Button x:Name="FontBig" Width="30" Height="40" Foreground="White" Background="Transparent" BorderThickness="0" FontFamily="Courier New" FontSize="24" Padding="5 1 5 0" Click="FontBig_Click">A</Button>
             </StackPanel>           
-            <StackPanel Orientation="Horizontal" Width="120" Margin="0 150">
-                <Border CornerRadius="20"><Button Width="30" Height="30" x:Name="Whtie" Background="White" Margin="20 0 0 0" Click="Whtie_Click"></Button></Border>
-                <Border CornerRadius="20">
-                    <Button Width="30" Height="30" x:Name="Black" Background="DarkSlateGray" Margin="20 0 0 0" Click="Black_Click"></Button></Border>
+            
+            <!--控制主題顏色按鈕-->
+            <StackPanel Orientation="Horizontal" Width="130" Margin="0 0">
+                <Border CornerRadius="20" x:Name="Black" Width="30" Height="30" Background="DimGray" BorderThickness="3" BorderBrush="DarkGray" Margin="4 0 0 0" MouseDown="Black_MouseDown"></Border>
+                <Border CornerRadius="20" x:Name="White" Width="30" Height="30" Background="White" BorderThickness="3" BorderBrush="DarkGray" Margin="14 0 0 0" MouseDown="White_MouseDown"></Border>
             </StackPanel>            
         </StackPanel>
         
         <!--右邊輸入區-->
         <ScrollViewer VerticalScrollBarVisibility="Auto" Grid.Column="1">
-            <TextBox x:Name="Textarea" Grid.Column="1" AcceptsReturn="True" TextWrapping="Wrap"></TextBox>
+            <TextBox x:Name="Textarea" Grid.Column="1" BorderThickness="0" AcceptsReturn="True" TextWrapping="Wrap"></TextBox>
         </ScrollViewer>
 
     </Grid>
